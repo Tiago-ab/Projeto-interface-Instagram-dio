@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instagram</title>
+</head>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex
+  justify-content: center;
+}
+.instagram-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+  
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-continue {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+.group {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+padding: 1.3rem 0;
+border: 1px solid lightgray;
+
+}
+.group:nth-child(1) {
+  
+  min-height: 19rem;
+  background-image: url('/Insta/stars-g667f59cb1_1920.jpg')
+  
+}
+.group.group:nth-child(2){
+  background-image: url('/Insta/stars-g667f59cb1_1920.jpg')
+}
+.instagram-logo{
+height: 6rem;
+  
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70%;
+  overflow: hidden;
+  
+  
+}
+
+.profile-photo img {
+  height: 6rem;
+}
+
+.instagram-login {
+  background-color: black;
+  color: whitesmoke;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    
+}
+.get-the-app p{
+  color: white;
+}
+
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+  
+}
+
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('/Insta/kisspng-the-pentagon-united-states-department-of-defense-u-national-security-act-of-1947-5b20e39aa97d64.3980009015288820746942.png');
+}
+
+
+.app-download:nth-child(2) {
+    background-image: url('/Insta/kisspng-director-of-the-central-intelligence-agency-united-inteligence-5b4a9a280cc1a3.0386430515316157840523.png');
+}
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    body {
+        background-color: black;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+
+</style>
+<body>
+  <div class="instagram-wrapper">
+    <div class="instagrm-phone">
+      <img src="/Insta/FunMozar Marvel The Avengers Shield Logo Wallpapers.jpg" alt="celular">
+    </div>
+<div class="instagram-continue">
+  <div class="group">
+<img src="/Insta/Picsart_22-05-19_14-56-26-158.png" class="instagram-logo" alt="instagram logo">
+<div class="profile-photo">
+  <img src="/Insta/20220425_153756.jpg" alt="foto de perfil">
+</div>
+<a href="#" class="instagram-login">Continue como agentetiago</a>
+<a href="#" class="instagram-logout">Remover conta</a>
+  </div>
+  <div class="group">
+    <p class="not-account">Não é o agente tiago?</p>
+    <p class="not-account">
+      <span class="link-blue">Alternar contas</span> ou
+      <span class="link-blue">Inscreva-se</span>
+    </p>
+  </div>
+<div class="get-the-app">
+  <p class="get-app">Problemas com a conta?</p>
+  <div class="download">
+<a href="#" class="app-download"></a>
+<a href="#" class="app-download"></a>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
